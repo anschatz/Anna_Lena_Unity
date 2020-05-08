@@ -1,0 +1,16 @@
+Character Mixamo to Unity https://www.youtube.com/watch?v=IeujTg71QoE
+- if you have no textures in unity after downloading characterhttps://www.youtube.com/watch?v=xOeodlLTx8g
+
+
+- download character and animation (bei running animation: IN PLACE anklicken)
+- drag and drop in unity
+- Asset Aj -> extract textures -> save textures in materials 
+- AJ needs an animator in inspector, From the Rig tab of the Inspector window, set the Animation Type to Humanoid. 
+      By default, the Avatar Definition property is set to Create From This Model. 
+      If you keep this option, Unity attempts to map the set of bones defined in the file to a Humanoid Avatar.
+- create controler for AJ
+- drag and drop controler on AJ/animator in inspector
+- double click on controler -> create idle state in transition to entry
+- connect idle animation with idle state
+- idle state soll immer wieder ausgeführt werden -> Idle -> Edit -> Loop Time active -> Apply
+- wenn man neue ANimation hinzufügen will, muss diese mit Idle verknüpft sein im Animator 
