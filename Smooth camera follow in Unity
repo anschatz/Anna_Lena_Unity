@@ -1,0 +1,70 @@
+Start:
+- go on camera
+- add component
+- write camera_Follow and select C#
+
+Variables:
+- we use Transfrom to get the position from the player
+- the faster the smoothSpeed variable, the faster the camera follows the player(between 0-1)
+
+LateUpdate Method
+- so we are not creating a start method, because we want the camera to adjust to the target every frame
+- so most people would use Update, but there is a problem
+- the target movement is most of the time also updated in the Udate function, so the target and camera would compete who should update first
+- thats the reason we use LateUpdate
+- after cameras current position equals player position safe and go back to Unity 
+- drag the player onto the target button in the camera
+- because there were problems with this, he changed it to FixedUpdate, but does not know what the reason for this was
+
+Camera behind the player( Third person View):
+- we do not want our camera at the same position as the player 
+- we want our camera behind it for third person view
+- create variable for it and add it to the position of the camera
+- it will just add vectors on to each other
+- then go back to Unity and there will be a new variable in camera called offset while in playmode
+- you can now live change the axis
+-> example x=0;y=2;z=-10
+- right click on the component: Copy Component
+- exit playmode: right click on component: Paste Component value
+
+Camera needs to always face the player:
+- need to change the script and create a new variable to safe position, so camera always follows our player
+- so we create new variable desiredposition
+- if we do not wat smoothness, we would be finsih here
+
+Smoothness:
+- add new variable smoothedPosition
+- Lerp stands for moving smooth from one point to another point
+Lerp(current position; desiredposition, t)
+- t stands for the time, so for 0 it would be the current position and for 1 it would be the dseired position; if between it gives us the mix of the two
+- and then equal our camera position on the SmoothedPosition
+- we multiply the smoothspeed with Time.deltaTime to make the smoothing occur at the same speed no matter the frame rate
+
+Camera Look At Player
+- use transform.LookAt(target); and Unity will do all the calculations and rotations
+
+Skript:
+
+//getting position from the target(player)
+public Transform target;
+
+//Variable for smoothness of the camera movement
+public float smoothSpeed = 0.125f;
+
+//Third Person view variable
+public Vector3 offset;
+
+void FixedUpdate ()
+{
+//cameras current position equals player position + Third Person View
+Vector3 desiredPosition = target.position + offset;
+
+//Smoothness Variable
+Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
+
+//cameras current position equals a mix from the current position and the desired position
+transform.position = smoothedPosition;
+
+//Camera should always look at the player
+transform.LookAt(target);
+}
