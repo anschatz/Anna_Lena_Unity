@@ -1,0 +1,26 @@
+- I worked on the colliders and the player script
+- I put a box collider on all Walls
+
+MovePlayer Script:
+- i changed it a lot!!!!
+- i tried different code from different videos
+- unfortunately i dont know the video anymore, i took the most code from
+- we walked through walls, because we used a rigidbody, but our script did not contain any physics
+- so we had to change the movement so it uses physics, by getting the rigidbody from the player and perform Add.Force and Add.Torque
+
+- we used Add.Force for moving forward and backward
+- the variable thrust is the speed we are moving the player
+- at the end of Add.Force there has to be a Forcemode, there are different ones, and i am not completly sure whats the difference between them
+-> i choosed Impulse, so i think always when we press the key we give the player an impulse into the according direction
+
+- i used Add.Torque for turning the player right or left
+- the variable amount is the speed we are turning around
+- in h we safe the horizontal axis and speed
+- we use again ForceMode.Impulse
+
+- i had to put Drag and angular Drag in the rigidbody of the player to 5(was one before), so movement is not to fast
+- Interpolate: Extrapolate; Collision Detection: Continous -> was in some videos, i dont know why
+- Freeze Rotation,click x and z; we just want to turn around y
+
+- Amount and thrust can be changed in Unity, so we can adjust it to the perfect speed
+
