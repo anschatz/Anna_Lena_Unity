@@ -1,0 +1,18 @@
+https://www.youtube.com/watch?v=tUbNIwn1Htc
+
+- create Animation for this door (Window -> Animation)
+- Animation controler -> tür_anim muss dort eingetragen werden 
+- Animation is recording (roter Punkt drücken)
+- add properties ( position, Rotation) 
+- in the middle of scale click there: change position and rotation
+- change rotation Y auf -120
+- stop recording animation 
+- go in animator
+- (create Animation Controler für Tür, wenn er es nicht automatisch gemacht hat -> add component Animator zur Tür)
+- (create empty states -> tür_anim und assign tür_anim dazu) -> macht er automatisch
+- create empty states -> DoNothing - > click on it: set as layer default state -> make a transition to Tür_animation
+- click on this transition to create a trigger ; call it OpenDoor
+- inspector of transition -> conditions = OpenDoor
+- create script and assign it to tür
+- add sphere collider to tür, increase radius to 1 or smaller and click: is trigger
+- start recording: go in animator: click: "add event" when door opens -> pauseAnimationEvent
