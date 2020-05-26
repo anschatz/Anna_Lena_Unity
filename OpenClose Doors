@@ -1,8 +1,21 @@
 1. Neuer Versuch (Hat funktionert)
 https://www.youtube.com/watch?v=13jceft_0PQ
 
-- 
-
+- die einzelne Tür anklicken -> Animation erstellen
+- 4 Animations erstellen: close - opening - open - closing
+- add properties (Rotation) 
+- Animation is recording (roter Punkt drücken)
+- change rotation: y = 90 (an Tür anpassen)
+- stop recording animation 
+- create new clip (und alles nochmal für alle 4 Animationen)
+- Animator öffnen: Transitions zwischen einzelnen Animationen bauen
+- Cube als DoorTrigger gebaut (vor und hinter Tür) -> MeshRenderer ausstellen
+  - Cube auf Tür ziehen, dass es ein Kind von Tür ist
+- in Animator: neuen Parameter erstellen: IsOpening (Bool)
+  - click on Transition: Close->Opening     Condition=IsOPening true
+  - Transition: Open-> Closing      condition=false
+- new Script: DoorController; add to DoorTrigger
+- Tür (ohne Türrahmen) braucht Boxcollider, dass AJ nicht hindurch rennt
 
 
 
