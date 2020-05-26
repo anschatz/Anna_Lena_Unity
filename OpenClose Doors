@@ -1,7 +1,7 @@
 1. Neuer Versuch (Hat funktionert)
 https://www.youtube.com/watch?v=13jceft_0PQ
 
-- die einzelne Tür anklicken -> Animation erstellen
+- die einzelne Tür anklicken ->add component Animator
 - 4 Animations erstellen: close - opening - open - closing
 - add properties (Rotation) 
 - Animation is recording (roter Punkt drücken)
