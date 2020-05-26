@@ -5,7 +5,7 @@ https://www.youtube.com/watch?v=13jceft_0PQ
 - 4 Animations erstellen: close - opening - open - closing
 - add properties (Rotation) 
 - Animation is recording (roter Punkt drücken)
-- change rotation: y = 90 (an Tür anpassen)
+- change rotation: y = 90 (an Tür anpassen) zwischen Zeitraum 0 und 1sec
 - stop recording animation 
 - create new clip (und alles nochmal für alle 4 Animationen)
 - Animator öffnen: Transitions zwischen einzelnen Animationen bauen
