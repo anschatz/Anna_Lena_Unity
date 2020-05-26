@@ -9,8 +9,10 @@ https://www.youtube.com/watch?v=13jceft_0PQ
 - stop recording animation 
 - create new clip (und alles nochmal für alle 4 Animationen)
 - Animator öffnen: Transitions zwischen einzelnen Animationen bauen
-- Cube als DoorTrigger gebaut (vor und hinter Tür) -> MeshRenderer ausstellen
-  - Cube auf Tür ziehen, dass es ein Kind von Tür ist
+  - entry -> close (= Layer Default) -> opening -> open -> closing -> close
+  
+- Cube als DoorTrigger gebaut (vor und hinter Tür) -> MeshRenderer ausstellen, Is Trigger an 
+  - Cube auf Tür ziehen in Hierarchy, dass es ein Kind von Tür ist
 - in Animator: neuen Parameter erstellen: IsOpening (Bool)
   - click on Transition: Close->Opening     Condition=IsOPening true
   - Transition: Open-> Closing      condition=false
