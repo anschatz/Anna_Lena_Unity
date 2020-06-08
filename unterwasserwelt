@@ -1,6 +1,13 @@
-fishes https://www.youtube.com/watch?v=Duy4ZrT8STw
+fishes https://www.youtube.com/watch?v=eMpI1eCsIyM
 
-underwater https://www.youtube.com/watch?v=HHMCW2wXMlo
-https://www.youtube.com/watch?v=2Nt2hoe_S_Y
-https://www.youtube.com/watch?v=SKhKJUtaMt0
-https://www.youtube.com/watch?v=HHMCW2wXMlo&t=183s
+- put fish in scene : attach sardineanimator controller to sardine
+- create fish manager as empty game object
+- create new script "globalflock" and drop it on fish manager
+- drag and drop the fish in prefab folder
+- and drag and drop fish prefab in script as "Fish prefab"
+- delete fish in scene
+- write global script
+- create "flock" script -> fishes are moving forward
+- attach flock script to fish prefab 
+
+bis Minute 12 von Video: danach programmiert sie flocking behavior
