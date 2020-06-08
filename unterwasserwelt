@@ -1,5 +1,10 @@
 fishes https://www.youtube.com/watch?v=eMpI1eCsIyM
 
+TODO: Richtung der Fische muss geändert werden 
+- bei beiden Scripte die Schwimmfläche anpassen: flocks und globalflocks
+
+
+
 - put fish in scene : attach sardineanimator controller to sardine
 - create fish manager as empty game object
 - create new script "globalflock" and drop it on fish manager
@@ -11,3 +16,6 @@ fishes https://www.youtube.com/watch?v=eMpI1eCsIyM
 - attach flock script to fish prefab 
 
 bis Minute 12 von Video: danach programmiert sie flocking behavior
+
+
+
