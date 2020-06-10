@@ -17,7 +17,14 @@ TODO: Richtung der Fische muss geändert werden  (Schwimmfläsche ist angepasst)
 
 bis Minute 12 von Video: danach programmiert sie flocking behavior
 
+- Fog anschalten in Unity und  -> Code hinzugefügt in globalFlock
+
 
 
 TODO: https://www.youtube.com/watch?v=CVbA8O01Z68&t=1333s
 bis Minute 10 gekommen 
+- rocks eingefügt
+- unterwasserlicht einstellen 
+- empty game object = caustics
+- add projector,turn on x with 90degree, click on orthographics
+- increase orthografic size
