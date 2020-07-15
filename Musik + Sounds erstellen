@@ -1,4 +1,4 @@
-Wo könnte man Musik brauchen:
+Wo könnte man Hintergrundmusik brauchen:
 - Startwelt
 - Unterwasserwelt
 - Labyrinth
@@ -9,3 +9,25 @@ Wo könnte man Sounds brauchen:
 - bei Jump
 - beim Münzen/Schlüssel einsammeln
 (- wenn AJ gegen etwas gegen läuft, z.B. Wand, Fisch,...)
+
+Kostenlose, lizensfreie Musik: opengameart.org
+https://www.youtube.com/watch?v=evi8mSZN4Yc
+
+Hintergrundmusik:
+- auf Lizensen achten: GPL 3.0
+- supportet formats in unity!!
+- audio runterladen
+- musikfile in assets ziehen (neuen ordner Audio erstellen)
+- rechtsklick hierarchy -> Audio -> audio source -> audioclip anklicken und Audio auswählen
+- play on awake aktiviert
+
+Sounds:
+- Lizenz: GPL 3.0 und CC0
+- nach Coin suchen im Suchfeld (sound effecte)
+- runterladen und in Ordner Audio packen 
+
+Sound mit Coin verbinden (Coins sind bereits im Spiel verteilt)
+- prefab Coin mit Audio verbinden bzw. eine Münze auswählen und -> Add Component (Inspector): Audio Source -> Audio Clip anklicken und Audio auswählen
+- play on awake deaktiviert
+- coin mit sound hat Lautsprecher in Scene -> Prefab Apply All
+- ins Script schauen: Minute 8:35 im Video 
